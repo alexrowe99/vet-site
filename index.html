@@ -11,7 +11,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="#" style="display: none;">
+		  <a class="navbar-brand hide" href="#" onclick="linkClick(this)">
 			<!-- logo generated using logoAI at https://www.logoai.com/ -->
 			<img src="image/logo.png" alt="vets-r-us-logo" width="80px">
 		  </a>
@@ -21,20 +21,20 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Staff</a>
+				<a class="nav-link" href="#" onclick="linkClick(this)">Staff</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Services</a>
+				<a class="nav-link" href="#" onclick="linkClick(this)">Services</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Location/Contact</a>
+				<a class="nav-link" href="#" onclick="linkClick(this)">Location/Contact</a>
 			  </li>
 			</ul>
 		  </div>
 		</div>
 	  </nav>
 	  <div id="main">
-		<div id="home" class="container-fluid text-center" style="display: none;">
+		<div id="home" class="container-fluid text-center" >
 			<div class="row align-items-start">
 				<div class="col"></div>
 				<div class="col">
@@ -42,12 +42,12 @@
 						<div class="row">
 							<div class="col">
 								<!-- logo generated using logoAI at https://www.logoai.com/ -->
-								<img src="image/logo.png" alt="vets-r-us-logo" class="img-fluid">
+								<img src="image/logo.png" alt="vets r us logo" class="img-fluid">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col">
-								<img src="image/vet-with-dog.jpg" alt="vets-r-us-logo" class="img-fluid" style="width: 50%">
+								<img src="image/vet-with-dog.jpg" alt="vets r us logo" class="img-fluid">
 							</div>
 						</div>
 						<div class="row">
@@ -70,13 +70,215 @@
 				</div>
 			</div>
 		</div>
-		<div id="staff" class="container-fluid mt-5">
+		<div id="staff" class="container-fluid mt-5 hide">
 			<div class="row align-items-center">
 				<div class="col-3"></div>
 				<div class="col-6">
-					<h2>Our Staff</h2>
+					<h1>Our Staff</h1>
 				</div>
 				<div class="col-3"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-3"></div>
+				<div class="col-6">
+					<div class="container">
+						<div class="row">
+							<div class="col-9 gx-0">
+								<div class="container">
+									<div class="row">
+										<div class="col gx-0">
+											<h3>Sample Staffmember</h3>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col gx-0">
+											<h5>Head Veterinarian</h5>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col gx-0 lh-lg">
+											This is a sample staff member as no information has been given for the staff for this design.
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+											laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+											voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+											non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<img src="image/vet-portrait.jpg" alt="vet with dog" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3"></div>
+			</div>
+		</div>
+		<div id="services" class="container-fluid mt-5 hide">
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<h1>Our Services</h1>
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<h3>General Check Up</h3>
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4 lh-lg">
+					We will take in your pet for a short time ensure all their basic needs are being met
+					and that there is nothing to worry about. Cost varies based on how much work needs doing.
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<h3>Emergency Room</h3>
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4 lh-lg">
+					We handle emergencies that occur any time of day as we have at least one vet on site at all times.
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<h3>Surgery</h3>
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-4"></div>
+				<div class="col-4 lh-lg">
+					If necessary we can perform surgery on your pet. We keep a pristine, sterile environment
+					for all of our surgeries to ensure nothing can go wrong that could have been prevented.
+				</div>
+				<div class="col-4"></div>
+			</div>
+			<div class="row align-items-center my-3">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<img src="image/dog.jpg" alt="german shepherd dog" class="img-fluid">
+				</div>
+				<div class="col-4"></div>
+			</div>
+		</div>
+		<div id="location-contact" class="container-fluid mt-5 hide">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
+								<div class="container">
+									<div class="row">
+										<div class="col">
+											<h1>Location</h1>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col mb-2">
+											You can find us at 123 Dog Rd, Woofburg, Postcode 4567, or just use the map below and follow directions.
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3131.1879164571856!2d-83.17230386860498!3d38.298313724614644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88442359b46a5dc3%3A0x771dcbb75a5d9ea7!2s123%20Dog%20Rd%2C%20Olive%20Hill%2C%20KY%2041164%2C%20USA!5e0!3m2!1sen!2sau!4v1678843162238!5m2!1sen!2sau"
+												width="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<img src="image/cat.jpg" alt="cat peeking over invisible surface" class="img-fluid">
+							</div>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-6">
+								<div class="container">
+									<div class="row">
+										<div class="col">
+											<h1>Contact</h1>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<form>
+												<div class="container">
+													<div class="row">
+														<div class="col gx-0">
+															<label for="name">Name*:</label>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col gx-0">
+															<input type="text" name="name" id="name" required>
+														</div>
+													</div>
+													<div class="row mt-2">
+														<div class="col gx-0">
+															<label for="email">Email*:</label>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col gx-0">
+															<input type="text" name="email" id="email" required>
+														</div>
+													</div>
+													<div class="row mt-2">
+														<div class="col gx-0">
+															<label for="phone">Phone:</label>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col gx-0">
+															<input type="text" name="phone" id="phone">
+														</div>
+													</div>
+													<div class="row mt-2">
+														<div class="col gx-0">
+															<label for="message">Message*:</label>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col gx-0">
+															<textarea type="text" name="message" id="message"></textarea>
+														</div>
+													</div>
+													<div class="row mt-2">
+														<div class="col gx-0">
+															<input type="submit" value="Send">
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-1 ">
+								<p>OR</p>
+							</div>
+							<div class="col-5">
+								Call us on 1234 DOGS or Email us at enquiries@vetsrus.com
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-2"></div>
 			</div>
 		</div>
 	  </div>

@@ -1,0 +1,11 @@
+.hide {
+	display: none;
+}
+
+input[type=text], textarea {
+	width: 100%;
+}
+
+img[src="image/vet-with-dog.jpg"] {
+	width: 50%;
+}
